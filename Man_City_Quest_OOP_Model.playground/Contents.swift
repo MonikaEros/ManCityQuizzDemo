@@ -166,7 +166,7 @@ class QuizzQuestionLevelOne: QuizzQuestion {
         arrayOfNumbers += [localMainValue]
         
         for additionalQuestionNumber in 1...levelOfQuestion {
-            checkAdditionalQuestion(additionalQuestionOneValue)
+            checkAdditionalQuestion(valueAdditional: additionalQuestionOneValue)
             if localAdditionalValue != 0 {
                 arrayOfNumbers[additionalQuestionNumber] = localAdditionalValue
                 self.passedStatus = true
