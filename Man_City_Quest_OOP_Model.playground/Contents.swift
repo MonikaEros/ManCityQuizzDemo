@@ -28,7 +28,7 @@ protocol QuizzQuestionProtocol {
 public func true_false_randomizer() -> Bool {
     let number = Int.random(in: 0 ..< 10)
     
-    if number <= 8 {
+    if number <= 6 {
         return true
     } else {
         return false
@@ -72,11 +72,12 @@ class QuizzQuestion: QuizzQuestionProtocol {
     var mainQuestionValue = 10
     var mainQuestionFakeValue = -5
     var additionalQuestionOneValue = 8
+    var levelOfQuestion = 1
     var localMainValue = 0
     var localAdditionalValue = 0
     var localAnswer : Bool
     var localFake : Bool
-    var levelOfQuestion = 1
+  
     
     
     init() {
@@ -85,9 +86,9 @@ class QuizzQuestion: QuizzQuestionProtocol {
         self.additionalQuestionOne = AdditionalQuestion()
         self.additionalQuestionTwo = AdditionalQuestion()
         self.additionalQuestionThree = AdditionalQuestion()
-        self.passedStatus = Bool()
+        self.passedStatus = true
         self.localAnswer = Bool()
-         self.localFake = Bool()
+        self.localFake = Bool()
     }
     
     func checkPreviousQuestion() {
@@ -111,14 +112,6 @@ class QuizzQuestion: QuizzQuestionProtocol {
         self.passedStatus = true
     }
     
-    
-}
-
-class QuizzQuestionLevelOne: QuizzQuestion {
-
-    override init() {
-    }
-    
     func checkMainQuestion(valueMain: Int) {
         if localAnswer {
             localMainValue = valueMain;
@@ -126,8 +119,8 @@ class QuizzQuestionLevelOne: QuizzQuestion {
         } else {
             self.mainQuestion.fake = true_false_randomizer()
             localFake = self.mainQuestion.fake
+        }
     }
-        
     
     func checkAdditionalQuestion(valueAdditional: Int) {
 
@@ -144,26 +137,30 @@ class QuizzQuestionLevelOne: QuizzQuestion {
                    self.passedStatus = false
             }
        }
+    }
     
     func getValues() -> [Int] {
         
         var arrayOfNumbers: [Int]
-        
+        print("We will check previous question now")
         checkPreviousQuestion()
 
         if self.passedStatus == false {
             return [localMainValue,localAdditionalValue] // (0, 0), status: false
         }
+        print("We will set value now")
 
         setValues()
-        
+        print("We will check main question now")
+
         checkMainQuestion(valueMain: mainQuestionValue)
-        
+        print("We checked main question now")
+
         if self.passedStatus == true {
             return [localMainValue,localAdditionalValue] // (10, 10)
         }
-        
-        arrayOfNumbers += [localMainValue]
+        print("We are still here? Then answer is wrong")
+        arrayOfNumbers = [localMainValue]
         
         for additionalQuestionNumber in 1...levelOfQuestion {
             checkAdditionalQuestion(valueAdditional: additionalQuestionOneValue)
@@ -171,47 +168,71 @@ class QuizzQuestionLevelOne: QuizzQuestion {
                 arrayOfNumbers[additionalQuestionNumber] = localAdditionalValue
                 self.passedStatus = true
             } else {
-                
+                for i in additionalQuestionNumber...levelOfQuestion {
+                    arrayOfNumbers[i] = 0
+                }
             }
-            
-            
         }
+            
+        return arrayOfNumbers
+        
+    }
+    
+    
+}
+
+class QuizzQuestionLevelOne: QuizzQuestion {
+
+    override init() {
+    }
+        
+}
+
+
+class QuizzQuestionLevelTwo: QuizzQuestion {
+  
+    override init() {
+        super.init()
+        self.mainQuestionValue = 20
+        self.mainQuestionFakeValue = -10
+        self.additionalQuestionOneValue = 15
+        self.levelOfQuestion = 2
+    }
+        
+}
+
+
+class QuizzQuestionLevelThree: QuizzQuestion {
+  
+    override init() {
+        super.init()
+        self.mainQuestionValue = 30
+        self.mainQuestionFakeValue = -20
+        self.additionalQuestionOneValue = 25
+        self.levelOfQuestion = 3
+    }
         
 }
         
-ё}
+print("Question 1:")
+var question_1_0 = QuizzQuestionLevelOne()
+question_1_0.getValues()
+question_1_0.passedStatus
+print("Question 2:")
 
+var question_2_0 = QuizzQuestionLevelOne()
+question_2_0.previousQuestion = question_1_0
+question_2_0.previousQuestion?.passedStatus
+question_2_0.getValues()
+question_2_0.passedStatus
 
-//class QuizzQuestionLevelTwo: QuizzQuestion {
-//
-//   var previousQuestion: QuizzQuestion?
-//
-//   init(previousQuestion: QuizzQuestion) {
-//    self.previousQuestion = previousQuestion
-//   }
-//
-//}
-        
-var list = [0, 1]
-list[2] = 0
-print(list)
-//
-//print("Question 1:")
-//var question_1_0 = QuizzQuestionLevelOne()
-//question_1_0.getValues()
-//question_1_0.passedStatus
-//print("Question 2:")
-//var question_2_0 = QuizzQuestionLevelOne()
-//question_2_0.previousQuestion = question_1_0
-//question_2_0.previousQuestion?.passedStatus
-//question_2_0.getValues()
-//question_2_0.passedStatus
-//
-////var question_3_0 = QuizzQuestionLevelTwo(previousQuestion: question_2_0)
-////question_3_0.previousQuestion.passedStatus
-////question_3_0.getValues()
-////question_3_0.passedStatus
-////
+print("Question 3:")
+var question_3_0 = QuizzQuestionLevelTwo()
+question_3_0.previousQuestion = question_2_0
+question_3_0.previousQuestion?.passedStatus
+question_3_0.getValues()
+question_3_0.passedStatus
+
 ////var question_4_0 = QuizzQuestionLevelTwo(previousQuestion: question_3_0)
 ////question_4_0.getValues()
 ////question_4_0.passedStatus
