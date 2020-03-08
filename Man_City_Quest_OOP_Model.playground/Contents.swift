@@ -129,7 +129,7 @@ class QuizzQuestionLevelOne: QuizzQuestion {
     }
         
     
-    func checkAdditionalQuestion(valueAdditional: Int, previousAnswer: Int) {
+    func checkAdditionalQuestion(valueAdditional: Int) {
 
         if localFake {
             localMainValue = mainQuestionFakeValue
@@ -166,7 +166,7 @@ class QuizzQuestionLevelOne: QuizzQuestion {
         arrayOfNumbers += [localMainValue]
         
         for additionalQuestionNumber in 1...levelOfQuestion {
-            checkAdditionalQuestion
+            checkAdditionalQuestion(additionalQuestionOneValue)
             if localAdditionalValue != 0 {
                 arrayOfNumbers[additionalQuestionNumber] = localAdditionalValue
                 self.passedStatus = true
