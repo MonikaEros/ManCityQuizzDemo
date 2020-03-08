@@ -82,6 +82,8 @@ class QuizzQuestion: QuizzQuestionProtocol {
 class QuizzQuestionLevelOne: QuizzQuestion {
     
     var previousQuestion: QuizzQuestion?
+    var localMainValue = 0
+    var localAdditionalValue = 0
 
     override init() {
         //self.previousQuestion = previousQuestion!
@@ -93,17 +95,19 @@ class QuizzQuestionLevelOne: QuizzQuestion {
         self.additionalQuestionOne?.value = 8
     }
     
-    func getValues() -> (Int, Int) {
- 
-        var localMainValue = 0
-        var localAdditionalValue = 0;
-        
+    func checkPreviousQuestion() {
         if self.previousQuestion != nil {
             if self.previousQuestion?.passedStatus == false {
                 self.passedStatus = false
                 return (localMainValue,localAdditionalValue) // (0, 0), status: false
             }
         }
+    }
+    
+    func getValues() -> (Int, Int) {
+ 
+        
+
         
         self.mainQuestion.answer = true_false_randomizer()
         let localAnswer = self.mainQuestion.answer
