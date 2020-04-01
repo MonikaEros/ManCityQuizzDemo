@@ -16,14 +16,14 @@ class RoundButton: UIButton {
     @IBInspectable var roundButton: Bool = false {
         didSet {
             if roundButton {
-                layer.cornerRadius = 6
+                layer.cornerRadius = 15
             }
         }
     }
     
     override func prepareForInterfaceBuilder() {
         if roundButton {
-            layer.cornerRadius = 6
+            layer.cornerRadius = 15
         }
     }
 }
