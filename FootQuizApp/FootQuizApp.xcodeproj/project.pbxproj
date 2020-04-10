@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B50B6B40243BAEB3008A4E97 /* question_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = B50B6B3F243BAEB3008A4E97 /* question_1.gif */; };
+		B5249F682440C7ED000BCD24 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = B5249F672440C7ED000BCD24 /* JGProgressHUD */; };
+		B5249F6D2440CDB1000BCD24 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B5249F6A2440CDB1000BCD24 /* ProgressHUD.m */; };
+		B5249F6E2440CDB1000BCD24 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B5249F6B2440CDB1000BCD24 /* ProgressHUD.bundle */; };
 		B530CC8B243B7B7A00D01999 /* AdditionalQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530CC8A243B7B7A00D01999 /* AdditionalQuestion.swift */; };
 		B530CC8D243B7B8700D01999 /* MainQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530CC8C243B7B8700D01999 /* MainQuestion.swift */; };
 		B530CC8F243B7B9A00D01999 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530CC8E243B7B9A00D01999 /* Player.swift */; };
@@ -26,12 +30,28 @@
 		B533F1B4243B52E0006DA2EF /* RoundRulesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B533F1B3243B52E0006DA2EF /* RoundRulesButton.swift */; };
 		B533F1B6243B6438006DA2EF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B533F1B5243B6438006DA2EF /* Default-568h@2x.png */; };
 		B533F1B9243B67DC006DA2EF /* SwiftyGif in Frameworks */ = {isa = PBXBuildFile; productRef = B533F1B8243B67DC006DA2EF /* SwiftyGif */; };
-		B533F1BD243B68E4006DA2EF /* Football.gif in Resources */ = {isa = PBXBuildFile; fileRef = B533F1BB243B68E3006DA2EF /* Football.gif */; };
+		B535D863243C91B70013D84D /* question_1_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = B535D862243C91B70013D84D /* question_1_1.gif */; };
+		B535D86A243C93D50013D84D /* question_3_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = B535D864243C93D40013D84D /* question_3_1.gif */; };
+		B535D86B243C93D50013D84D /* question_2_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = B535D865243C93D40013D84D /* question_2_1.gif */; };
+		B535D86C243C93D50013D84D /* question_3_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = B535D866243C93D40013D84D /* question_3_2.gif */; };
+		B535D86D243C93D50013D84D /* question_4.gif in Resources */ = {isa = PBXBuildFile; fileRef = B535D867243C93D50013D84D /* question_4.gif */; };
+		B535D86E243C93D50013D84D /* question_3.gif in Resources */ = {isa = PBXBuildFile; fileRef = B535D868243C93D50013D84D /* question_3.gif */; };
+		B535D86F243C93D50013D84D /* question_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = B535D869243C93D50013D84D /* question_2.gif */; };
+		B535D875243CA1FD0013D84D /* question_5_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = B535D870243CA1FD0013D84D /* question_5_2.gif */; };
+		B535D876243CA1FD0013D84D /* question_5.gif in Resources */ = {isa = PBXBuildFile; fileRef = B535D871243CA1FD0013D84D /* question_5.gif */; };
+		B535D877243CA1FD0013D84D /* question_5_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = B535D872243CA1FD0013D84D /* question_5_1.gif */; };
+		B535D878243CA1FD0013D84D /* question_4_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = B535D873243CA1FD0013D84D /* question_4_2.gif */; };
+		B535D879243CA1FD0013D84D /* question_4_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = B535D874243CA1FD0013D84D /* question_4_1.gif */; };
 		B578DB4A243B72E8006BBD0D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B578DB49243B72E8006BBD0D /* Question.swift */; };
 		B578DB4C243B74DF006BBD0D /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = B578DB4B243B74DF006BBD0D /* QuestionBank.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B50B6B3F243BAEB3008A4E97 /* question_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = question_1.gif; sourceTree = "<group>"; };
+		B5249F692440CDB0000BCD24 /* FootQuizApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FootQuizApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		B5249F6A2440CDB1000BCD24 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		B5249F6B2440CDB1000BCD24 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		B5249F6C2440CDB1000BCD24 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		B530CC8A243B7B7A00D01999 /* AdditionalQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalQuestion.swift; sourceTree = "<group>"; };
 		B530CC8C243B7B8700D01999 /* MainQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQuestion.swift; sourceTree = "<group>"; };
 		B530CC8E243B7B9A00D01999 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -52,7 +72,18 @@
 		B533F1B1243B52B1006DA2EF /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		B533F1B3243B52E0006DA2EF /* RoundRulesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundRulesButton.swift; sourceTree = "<group>"; };
 		B533F1B5243B6438006DA2EF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		B533F1BB243B68E3006DA2EF /* Football.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Football.gif; sourceTree = "<group>"; };
+		B535D862243C91B70013D84D /* question_1_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = question_1_1.gif; sourceTree = "<group>"; };
+		B535D864243C93D40013D84D /* question_3_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = question_3_1.gif; sourceTree = "<group>"; };
+		B535D865243C93D40013D84D /* question_2_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = question_2_1.gif; sourceTree = "<group>"; };
+		B535D866243C93D40013D84D /* question_3_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = question_3_2.gif; sourceTree = "<group>"; };
+		B535D867243C93D50013D84D /* question_4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = question_4.gif; sourceTree = "<group>"; };
+		B535D868243C93D50013D84D /* question_3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = question_3.gif; sourceTree = "<group>"; };
+		B535D869243C93D50013D84D /* question_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = question_2.gif; sourceTree = "<group>"; };
+		B535D870243CA1FD0013D84D /* question_5_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = question_5_2.gif; sourceTree = "<group>"; };
+		B535D871243CA1FD0013D84D /* question_5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = question_5.gif; sourceTree = "<group>"; };
+		B535D872243CA1FD0013D84D /* question_5_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = question_5_1.gif; sourceTree = "<group>"; };
+		B535D873243CA1FD0013D84D /* question_4_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = question_4_2.gif; sourceTree = "<group>"; };
+		B535D874243CA1FD0013D84D /* question_4_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = question_4_1.gif; sourceTree = "<group>"; };
 		B578DB49243B72E8006BBD0D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		B578DB4B243B74DF006BBD0D /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5249F682440C7ED000BCD24 /* JGProgressHUD in Frameworks */,
 				B533F1B9243B67DC006DA2EF /* SwiftyGif in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,7 +173,11 @@
 		B533F1B0243B522E006DA2EF /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
+				B5249F6B2440CDB1000BCD24 /* ProgressHUD.bundle */,
+				B5249F6C2440CDB1000BCD24 /* ProgressHUD.h */,
+				B5249F6A2440CDB1000BCD24 /* ProgressHUD.m */,
 				B533F1A4243B5135006DA2EF /* LaunchScreen.storyboard */,
+				B5249F692440CDB0000BCD24 /* FootQuizApp-Bridging-Header.h */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -149,7 +185,19 @@
 		B533F1BA243B68AE006DA2EF /* Gifs */ = {
 			isa = PBXGroup;
 			children = (
-				B533F1BB243B68E3006DA2EF /* Football.gif */,
+				B50B6B3F243BAEB3008A4E97 /* question_1.gif */,
+				B535D862243C91B70013D84D /* question_1_1.gif */,
+				B535D869243C93D50013D84D /* question_2.gif */,
+				B535D865243C93D40013D84D /* question_2_1.gif */,
+				B535D868243C93D50013D84D /* question_3.gif */,
+				B535D864243C93D40013D84D /* question_3_1.gif */,
+				B535D866243C93D40013D84D /* question_3_2.gif */,
+				B535D867243C93D50013D84D /* question_4.gif */,
+				B535D874243CA1FD0013D84D /* question_4_1.gif */,
+				B535D873243CA1FD0013D84D /* question_4_2.gif */,
+				B535D871243CA1FD0013D84D /* question_5.gif */,
+				B535D872243CA1FD0013D84D /* question_5_1.gif */,
+				B535D870243CA1FD0013D84D /* question_5_2.gif */,
 			);
 			path = Gifs;
 			sourceTree = "<group>";
@@ -172,6 +220,7 @@
 			name = FootQuizApp;
 			packageProductDependencies = (
 				B533F1B8243B67DC006DA2EF /* SwiftyGif */,
+				B5249F672440C7ED000BCD24 /* JGProgressHUD */,
 			);
 			productName = FootQuizApp;
 			productReference = B533F196243B5130006DA2EF /* FootQuizApp.app */;
@@ -189,6 +238,7 @@
 				TargetAttributes = {
 					B533F195243B5130006DA2EF = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -203,6 +253,7 @@
 			mainGroup = B533F18D243B5130006DA2EF;
 			packageReferences = (
 				B533F1B7243B67DC006DA2EF /* XCRemoteSwiftPackageReference "SwiftyGif" */,
+				B5249F662440C7ED000BCD24 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
 			);
 			productRefGroup = B533F197243B5130006DA2EF /* Products */;
 			projectDirPath = "";
@@ -218,11 +269,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B533F1BD243B68E4006DA2EF /* Football.gif in Resources */,
+				B535D878243CA1FD0013D84D /* question_4_2.gif in Resources */,
+				B535D86A243C93D50013D84D /* question_3_1.gif in Resources */,
+				B535D877243CA1FD0013D84D /* question_5_1.gif in Resources */,
+				B535D86E243C93D50013D84D /* question_3.gif in Resources */,
+				B50B6B40243BAEB3008A4E97 /* question_1.gif in Resources */,
 				B533F1A6243B5135006DA2EF /* LaunchScreen.storyboard in Resources */,
+				B535D863243C91B70013D84D /* question_1_1.gif in Resources */,
 				B533F1B6243B6438006DA2EF /* Default-568h@2x.png in Resources */,
+				B535D875243CA1FD0013D84D /* question_5_2.gif in Resources */,
+				B535D86D243C93D50013D84D /* question_4.gif in Resources */,
+				B535D879243CA1FD0013D84D /* question_4_1.gif in Resources */,
+				B535D86C243C93D50013D84D /* question_3_2.gif in Resources */,
+				B535D86B243C93D50013D84D /* question_2_1.gif in Resources */,
+				B535D876243CA1FD0013D84D /* question_5.gif in Resources */,
+				B5249F6E2440CDB1000BCD24 /* ProgressHUD.bundle in Resources */,
 				B533F1A3243B5135006DA2EF /* Assets.xcassets in Resources */,
 				B533F1A1243B5130006DA2EF /* Main.storyboard in Resources */,
+				B535D86F243C93D50013D84D /* question_2.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +302,7 @@
 				B530CC97243B7DD600D01999 /* QuizzQuestionLevelThree.swift in Sources */,
 				B533F1B2243B52B1006DA2EF /* RoundButton.swift in Sources */,
 				B530CC9B243B7DF300D01999 /* QuizzQuestionLevelFive.swift in Sources */,
+				B5249F6D2440CDB1000BCD24 /* ProgressHUD.m in Sources */,
 				B530CC8D243B7B8700D01999 /* MainQuestion.swift in Sources */,
 				B533F1B4243B52E0006DA2EF /* RoundRulesButton.swift in Sources */,
 				B533F19E243B5130006DA2EF /* ViewController.swift in Sources */,
@@ -392,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FootQuizApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -400,6 +466,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Oks.FootQuizApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FootQuizApp/Supporting files/FootQuizApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -409,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FootQuizApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -417,6 +486,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Oks.FootQuizApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FootQuizApp/Supporting files/FootQuizApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -446,6 +516,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B5249F662440C7ED000BCD24 /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
 		B533F1B7243B67DC006DA2EF /* XCRemoteSwiftPackageReference "SwiftyGif" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kirualex/SwiftyGif";
@@ -457,6 +535,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B5249F672440C7ED000BCD24 /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5249F662440C7ED000BCD24 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
+		};
 		B533F1B8243B67DC006DA2EF /* SwiftyGif */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B533F1B7243B67DC006DA2EF /* XCRemoteSwiftPackageReference "SwiftyGif" */;

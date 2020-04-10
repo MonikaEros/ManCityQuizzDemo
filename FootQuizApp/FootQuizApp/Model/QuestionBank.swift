@@ -14,54 +14,54 @@ class QuestionBank {
         
     }
     lazy var dictOfAnswers = ["Answer1" : "1",
-                         "FakeAnswer1" : "1",
-                         "AddAnswer1.1" : "1",
+                         "FakeAnswer1" : "f1",
+                         "AddAnswer1.1" : "a1.1",
                          
-                         "Answer2" : "1",
-                         "FakeAnswer2" : "1",
-                         "AddAnswer2.1" : "1",
+                         "Answer2" : "2",
+                         "FakeAnswer2" : "f2",
+                         "AddAnswer2.1" : "a2.1",
                          
-                         "Answer3" : "1",
-                         "FakeAnswer3" : "1",
-                         "AddAnswer3.1" : "1",
-                         "AddAnswer3.2" : "1",
+                         "Answer3" : "3",
+                         "FakeAnswer3" : "f3",
+                         "AddAnswer3.1" : "a3.1",
+                         "AddAnswer3.2" : "a3.2",
                          
-                         "Answer4" : "1",
-                         "FakeAnswer4" : "1",
-                         "AddAnswer4.1" : "1",
-                         "AddAnswer4.2" : "1",
+                         "Answer4" : "4",
+                         "FakeAnswer4" : "f4",
+                         "AddAnswer4.1" : "a4.1",
+                         "AddAnswer4.2" : "a4.2",
                          
-                         "Answer5" : "1",
-                         "FakeAnswer5" : "1",
-                         "AddAnswer5.1" : "1",
-                         "AddAnswer5.2" : "1",
+                         "Answer5" : "5",
+                         "FakeAnswer5" : "f5",
+                         "AddAnswer5.1" : "a5.1",
+                         "AddAnswer5.2" : "a5.2",
                         
-                         "Answer6" : "1",
-                         "FakeAnswer6" : "1",
-                         "AddAnswer6.1" : "1",
-                         "AddAnswer6.2" : "1",
-                         "AddAnswer6.3" : "1",
+                         "Answer6" : "6",
+                         "FakeAnswer6" : "f6",
+                         "AddAnswer6.1" : "a6.1",
+                         "AddAnswer6.2" : "a6.2",
+                         "AddAnswer6.3" : "a6.3",
                          
-                         "Answer7" : "1",
-                         "FakeAnswer7" : "1",
-                         "AddAnswer7.1" : "1",
-                         "AddAnswer7.2" : "1",
-                         "AddAnswer7.3" : "1",
+                         "Answer7" : "7",
+                         "FakeAnswer7" : "f7",
+                         "AddAnswer7.1" : "a7.1",
+                         "AddAnswer7.2" : "a7.2",
+                         "AddAnswer7.3" : "a7.3",
                          
-                         "Answer8" : "1",
-                         "FakeAnswer8" : "1",
-                         "AddAnswer8.1" : "1",
-                         "AddAnswer8.2" : "1",
-                         "AddAnswer8.3" : "1",
+                         "Answer8" : "8",
+                         "FakeAnswer8" : "f8",
+                         "AddAnswer8.1" : "a8.1",
+                         "AddAnswer8.2" : "a8.2",
+                         "AddAnswer8.3" : "a8.3",
                          
-                         "Answer9" : "1",
-                         "FakeAnswer9" : "1",
-                         "AddAnswer9.1" : "1",
-                         "AddAnswer9.2" : "1",
-                         "AddAnswer9.3" : "1",
+                         "Answer9" : "9",
+                         "FakeAnswer9" : "f9",
+                         "AddAnswer9.1" : "a9.1",
+                         "AddAnswer9.2" : "a9.2",
+                         "AddAnswer9.3" : "a9.3",
                          
-                         "Answer10" : "1",
-                         "Answer11" : "1"]
+                         "Answer10" : "10",
+                         "Answer11" : "11"]
                          
     
     lazy var question_1 = MainQuestion(gif: "question_1.gif", number: "1", answer: dictOfAnswers["Answer1"]!, fakeAnswer: dictOfAnswers["FakeAnswer1"]!)
@@ -73,8 +73,8 @@ class QuestionBank {
     lazy var question_7 = MainQuestion(gif: "question_7.gif", number: "7", answer: dictOfAnswers["Answer7"]!, fakeAnswer: dictOfAnswers["FakeAnswer7"]!)
     lazy var question_8 = MainQuestion(gif: "question_8.gif", number: "8", answer: dictOfAnswers["Answer8"]!, fakeAnswer: dictOfAnswers["FakeAnswer8"]!)
     lazy var question_9 = MainQuestion(gif: "question_9.gif", number: "9", answer: dictOfAnswers["Answer9"]!, fakeAnswer: dictOfAnswers["FakeAnswer9"]!)
-    lazy var question_10 = MainQuestion(gif: "question_10.gif", number: "10", answer: dictOfAnswers["Answer10"]!, fakeAnswer: dictOfAnswers["FakeAnswer10"]!)
-    lazy var question_11 = MainQuestion(gif: "question_11.gif", number: "11", answer: dictOfAnswers["Answer11"]!, fakeAnswer: dictOfAnswers["FakeAnswer11"]!)
+    lazy var question_10 = MainQuestion(gif: "question_10.gif", number: "10", answer: dictOfAnswers["Answer10"]!, fakeAnswer: "Answer")
+    lazy var question_11 = MainQuestion(gif: "question_11.gif", number: "11", answer: dictOfAnswers["Answer11"]!, fakeAnswer: "Answer")
 
 
     lazy var question_1_1 = AdditionalQuestion(gif: "question_1_1.gif", number: "1.1", answer: dictOfAnswers["AddAnswer1.1"]!)
@@ -112,4 +112,5 @@ class QuestionBank {
     lazy var question11 = QuizzQuestionLevelFive(main: question_11, additional: question_1_1)
     
     lazy var list = [question1, question2, question3, question4, question5, question6, question7, question8, question9, question10, question11]
+
 }

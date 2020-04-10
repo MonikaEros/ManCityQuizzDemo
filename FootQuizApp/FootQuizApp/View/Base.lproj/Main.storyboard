@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,15 +12,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FootQuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsc-ns-ynu" userLabel="Quesiton">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="332"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="517"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question #" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVt-s3-vIJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="a0G-bH-yRx"/>
                                         </constraints>
@@ -29,10 +28,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Plt-Aw-0cS" userLabel="QuestionGif">
-                                        <rect key="frame" x="0.0" y="42" width="375" height="290"/>
+                                        <rect key="frame" x="0.0" y="42" width="414" height="475"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Plt-Aw-0cS" firstAttribute="leading" secondItem="nsc-ns-ynu" secondAttribute="leading" id="HPy-py-kk5"/>
                                     <constraint firstAttribute="bottom" secondItem="Plt-Aw-0cS" secondAttribute="bottom" id="JS7-9p-9tk"/>
@@ -40,24 +38,24 @@
                                     <constraint firstAttribute="trailing" secondItem="VVt-s3-vIJ" secondAttribute="trailing" id="cVJ-j6-SEE"/>
                                     <constraint firstItem="VVt-s3-vIJ" firstAttribute="leading" secondItem="nsc-ns-ynu" secondAttribute="leading" id="jYw-Qg-f9O"/>
                                     <constraint firstItem="Plt-Aw-0cS" firstAttribute="top" secondItem="nsc-ns-ynu" secondAttribute="top" constant="42" id="t7t-vh-Rqh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Plt-Aw-0cS" secondAttribute="trailing" id="woL-9U-vFl"/>
                                     <constraint firstItem="VVt-s3-vIJ" firstAttribute="top" secondItem="nsc-ns-ynu" secondAttribute="top" id="zvV-Yv-9Ya"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cMU-bA-ppR" userLabel="Answer">
-                                <rect key="frame" x="0.0" y="332" width="375" height="240"/>
+                                <rect key="frame" x="0.0" y="561" width="414" height="240"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your answer" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qRz-9P-IKy">
-                                        <rect key="frame" x="106" y="36" width="163" height="34"/>
+                                        <rect key="frame" x="125.5" y="36" width="163" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="163" id="3ys-zS-SnL"/>
                                             <constraint firstAttribute="height" constant="34" id="GyW-mf-EqT"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wr-ed-Mgw" customClass="RoundButton" customModule="FootQuizApp" customModuleProvider="target">
-                                        <rect key="frame" x="157.5" y="100" width="60" height="30"/>
+                                        <rect key="frame" x="177" y="100" width="60" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="9Oy-28-1Jj"/>
@@ -75,7 +73,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6e-PF-JjA" customClass="RoundButton" customModule="FootQuizApp" customModuleProvider="target">
-                                        <rect key="frame" x="157.5" y="170" width="60" height="30"/>
+                                        <rect key="frame" x="177" y="170" width="60" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Yk2-5X-W9n"/>
@@ -93,7 +91,6 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="qRz-9P-IKy" firstAttribute="centerX" secondItem="cMU-bA-ppR" secondAttribute="centerX" id="BQ5-2X-5nb"/>
                                     <constraint firstItem="n6e-PF-JjA" firstAttribute="top" secondItem="4wr-ed-Mgw" secondAttribute="bottom" constant="40" id="Lop-p1-q6N"/>
@@ -106,22 +103,24 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q7i-zn-dfg" userLabel="Buttons (next, prev)">
-                                <rect key="frame" x="0.0" y="572" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="801" width="414" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fyX-Jl-lAD">
-                                        <rect key="frame" x="164" y="10" width="47" height="30"/>
+                                        <rect key="frame" x="183.5" y="10" width="47" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="47" id="k96-DQ-5Vb"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRr-C0-qlu" userLabel="Previous" customClass="RoundButton" customModule="FootQuizApp" customModuleProvider="target">
-                                        <rect key="frame" x="211" y="10" width="65" height="30"/>
+                                        <rect key="frame" x="230.5" y="10" width="65" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="kTB-he-OK2"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <state key="normal" title="Next"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                         </userDefinedRuntimeAttributes>
@@ -130,13 +129,15 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAT-5R-v1E" userLabel="Previous" customClass="RoundButton" customModule="FootQuizApp" customModuleProvider="target">
-                                        <rect key="frame" x="99" y="10" width="65" height="30"/>
+                                        <rect key="frame" x="118.5" y="10" width="65" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="vXu-R2-FtQ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <state key="normal" title="Previous"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                        <state key="normal" title="Previous">
+                                            <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                         </userDefinedRuntimeAttributes>
@@ -145,7 +146,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a07-HY-uJW" customClass="RoundRulesButton" customModule="FootQuizApp">
-                                        <rect key="frame" x="332" y="7.5" width="35" height="35"/>
+                                        <rect key="frame" x="371" y="7.5" width="35" height="35"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="35" id="RMt-BM-3GW"/>
@@ -163,7 +164,6 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="uAT-5R-v1E" secondAttribute="bottom" constant="10" id="4Ba-fQ-kvi"/>
                                     <constraint firstAttribute="bottom" secondItem="FRr-C0-qlu" secondAttribute="bottom" constant="10" id="6U5-fg-D8B"/>
@@ -184,7 +184,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tWz-LN-i83" userLabel="Score" colorLabel="IBBuiltInLabel-Blue">
-                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="851" width="414" height="45"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x/11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2M-YH-xZW" userLabel="Progress Label">
                                         <rect key="frame" x="5" y="3" width="32.5" height="21"/>
@@ -196,7 +196,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l24-6V-J5Z" userLabel="Score Label">
-                                        <rect key="frame" x="279" y="3" width="91" height="21"/>
+                                        <rect key="frame" x="318" y="3" width="91" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="s9O-zg-wZM"/>
                                         </constraints>
@@ -204,22 +204,16 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JtS-Fi-Vvp" userLabel="Progress Bar">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JtS-Fi-Vvp" userLabel="Progress Bar">
                                         <rect key="frame" x="0.0" y="27" width="50" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="3lW-30-sBK"/>
-                                            <constraint firstAttribute="height" constant="18" id="kmw-iR-w2y"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="JtS-Fi-Vvp" firstAttribute="leading" secondItem="tWz-LN-i83" secondAttribute="leading" id="2xI-UO-Ifr"/>
                                     <constraint firstItem="l24-6V-J5Z" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m2M-YH-xZW" secondAttribute="trailing" constant="8" symbolic="YES" id="3li-Uv-PZ7"/>
                                     <constraint firstAttribute="trailing" secondItem="l24-6V-J5Z" secondAttribute="trailing" constant="5" id="4gY-wX-1CX"/>
                                     <constraint firstItem="l24-6V-J5Z" firstAttribute="top" secondItem="tWz-LN-i83" secondAttribute="top" constant="3" id="ZL9-7A-QhL"/>
-                                    <constraint firstAttribute="bottom" secondItem="JtS-Fi-Vvp" secondAttribute="bottom" id="asB-CU-Hzq"/>
                                     <constraint firstItem="m2M-YH-xZW" firstAttribute="top" secondItem="tWz-LN-i83" secondAttribute="top" constant="3" id="bPc-5V-ulB"/>
                                     <constraint firstAttribute="height" constant="45" id="qLo-yu-Jkd"/>
                                     <constraint firstItem="m2M-YH-xZW" firstAttribute="leading" secondItem="tWz-LN-i83" secondAttribute="leading" constant="5" id="qgB-TJ-gvE"/>
@@ -251,6 +245,7 @@
                         <outlet property="nextButton" destination="FRr-C0-qlu" id="7hb-2Y-VrW"/>
                         <outlet property="playerAnswer" destination="qRz-9P-IKy" id="N0c-Si-8WV"/>
                         <outlet property="previousButton" destination="uAT-5R-v1E" id="BiW-nD-stF"/>
+                        <outlet property="progressBar" destination="JtS-Fi-Vvp" id="QGC-PN-Ed7"/>
                         <outlet property="progressLabel" destination="m2M-YH-xZW" id="e9K-Np-uyL"/>
                         <outlet property="questionImage" destination="Plt-Aw-0cS" id="kAE-cU-FOV"/>
                         <outlet property="questionImageView" destination="Plt-Aw-0cS" id="q6i-bL-nQ9"/>
